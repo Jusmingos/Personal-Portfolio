@@ -1,2 +1,2 @@
 # Personal-Portfolio
-This is a personal portfolio. 
+This project is my first attempt at creating a personal website portfolio last summer before college. At that point, I haven't taken any official CS classes and just followed some tutorials online. It is not at all refined, and some of the links don't actually lead to anywhere. The "Contact" and "Photos & Videos" are actually clikable though. I created this website because I really love using HTML, CSS and Javascript to actually create something that belongs to me. 
