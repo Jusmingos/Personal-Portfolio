@@ -1,0 +1,480 @@
+*{
+	text-decoration:none;
+	margin:0;
+}
+body{
+	background-color:lightyellow;
+}
+:root{
+	--font: 'Grandstander',cursive;
+	--color: #ffcccc;
+}
+
+/*.box{
+	width:200px;
+	height:100px;
+	padding:50px;
+	background-color: rgb(255,165,0);
+	margin:20px;
+	text-align:center;
+	margin-left:550px;
+	/*Use margin to adjust the position of the box in the webpage*/
+
+.wrapper{
+	margin:0 auto;/*top right bottom left */
+	width:73%;
+}
+
+body h1{
+	color:salmon;
+	text-align:center;
+	font-size:55px;
+	padding-top:20px;
+	font-family: var(--font);
+}
+#contact:hover{
+	color:dodgerblue;
+}
+#contact:active{
+	color:hotpink;
+}
+#contact:visited{
+	color:darkslategrey;
+}
+#photos:hover{
+	color:dodgerblue;
+}
+#photos:active{
+	color:hotpink;
+}
+#photos:visited{
+	color:darkslategrey;
+}
+#front:hover{
+	color:dodgerblue;
+}
+#front:active{
+	color:hotpink;
+}
+#front:visited{
+	color:darkslategrey;
+}
+#index:hover{
+	color:dodgerblue;
+}
+#index:active{
+	color:hotpink;
+}
+#index:visited{
+	color:darkslategrey;
+}
+#bottom:hover{
+	color:dodgerblue;
+}
+#bottom:active{
+	color:hotpink;
+}
+#bottom:visited{
+	color:darkslategrey;
+}
+#top:hover{
+	color:dodgerblue;
+}
+#top:active{
+	color:hotpink;
+}
+#top:visited{
+	color:darkslategrey;
+}
+
+.p-welcome{
+	font-size:20px;
+	text-align:center;
+	padding-top:20px;
+}
+.item{
+	font-size:20px;
+	padding-top:20px;
+}
+#bottom{
+	font-size:18px;
+	padding-top:15px;
+}
+#top{
+	font-size:18px;
+}
+.list{
+	width:100%;
+	background-color:var(--color);
+	line-height:30px;
+	text-align:center;
+	position:sticky; top:0;
+	position:-webkit-sticky;
+	z-index: 99999;
+	transition:all 2s ease 1s;
+}
+ul li{
+	position:relative;right:15px;
+	/*Position of the original list needs to be relative(so that the drop down can be absolute)*/
+	list-style:none;
+	font-size:12px;
+	font-family: 'Grandstander', cursive;
+	text-decoration:none;
+	display:inline-block;
+	padding:0 5.5px 0 3px;/*the fist number stands for the vertical padding & the second for the horizontal padding*/
+}
+ul li ul{
+	position:absolute;
+	/*Position of the drop down list needs to be absolute*/
+	display:none;
+	padding-left:7px;
+	background-color:bisque;
+	border-radius:15px 15px 15px 15px;
+	/*makes the border curved*/
+}
+ul li:hover ul{
+/*Apply the hover effect to the sub unordered list inside, not the list item*/
+	display:block;
+}
+ul li ul li{
+	text-align:left;
+	font-size:10px;
+	line-height:10px;
+	border-radius:4px;
+}
+ul li ul li:hover{
+	background-color:lightsalmon;
+	width:3px;
+	position:relative;left:2px;
+	border-radius:15px;
+	height:50px;
+	font-size:17px;
+}
+
+.profile{
+	width:100%;
+	height:auto;
+	padding-top:10px;
+}
+/*.profile:hover{
+	content: url(css/IMG_1070.jpg);
+	cursor:pointer;cursor:-ms-pointer;
+}*/
+.theater{
+	font-family: 'Grandstander', cursive;
+}
+video{
+	width:100%;
+	height:562.5px;
+	margin:0;
+}
+.photo{
+	width:100%;
+	max-height:600px;
+	height:100%;
+	margin:0;
+	padding-bottom:0;
+	float:none;
+}
+.photo1{
+	width:100%;
+	max-height:600px;
+	height:100%;
+	float:none;
+}
+.container{
+		width:100%;
+		height:auto;
+		background-color:rgba(255,204,204,0.5);
+		/*display:flex;
+		flex-flow: column wrap;
+		position:relative;left:20px;top:26px;*/
+		/*align-content:center;*/ /*you can also use align-content*/
+		transition:all 2s ease-in-out 0s;
+		-webkit-transition: all 2s ease-in-out 0;
+		-moz-transition:all 2s ease-in-out 0;
+		-o-transition:all 2s ease-in-out 0;
+	}
+.container:hover{
+	background-color:lightcyan;
+}
+.item{
+font-size:17px;
+padding-top:20px;
+line-height:35px;
+padding-left:10px;
+transition:all 2s ease-in-out 0;
+}
+.item:hover{
+	font-family:var(--font);
+}
+.item1{
+	font-size:15px;
+	padding-top:20px;
+	line-height:35px;
+	font-family: var(--font);
+	padding-left:14px;
+	/*text-decoration:underline;*/
+	/*order:2;*/
+}
+.item1::before{
+	content:"🌟";
+}
+.item1::after{
+	content:"🌟";
+}
+.France{
+	width:100%;
+	height:auto;
+}
+.France1{
+	width:100%;
+	height:auto;
+}
+.contact{
+	position:relative;top:20px;
+	line-height:45px;
+	font-size:20px;
+	text-align:center;
+}
+.front{
+	font-size:16px;
+	text-align:center;
+}
+
+form{
+	 width:100%;
+	 text-align:center;
+	 font-size:25px;
+}
+textarea{
+	resize:vertical;
+	max-height:100px;
+	width:50%;
+}
+select{
+	width:50%;
+	height:25px;
+}
+button{
+	width:50%;
+	height:30px;
+}
+input{
+	width:50%;
+	height:30px;
+}
+.info:focus, textarea:focus{
+	outline:none;
+	box-shadow:0 0 8px rgba(255,145,164,0.5);
+	 border:2px solid var(--color);
+}
+::placeholder{
+	color:grey;
+	opacity:1;
+}
+::-ms-input-placeholder{/*style for internet explorer*/
+	color:grey;
+	opacity:1;
+}
+::-ms-input-placeholder{/*style for microsoft edge*/
+	color:grey;
+	opacity:1;
+}
+.g{
+	display:flex;
+	position:relative;bottom:25px;left:20px;
+}
+table{
+	width:600px;
+	text-align:center;
+	position:relative;top:50px;
+	line-height:30px;
+	/*border-spacing:20px;*/
+}
+th{
+	 font-size:20px;
+}
+td{
+	font-size:20px;
+}
+caption{
+	font-size:25px;
+	position:relative;bottom:10px;
+	font-family: var(--font);
+	text-decoration:underline;
+}
+table,th,td{
+	border: 2px solid black;
+	border-collapse: collapse; /*eliminates 2 borders that are right next to each other, so there's no space*/
+}
+tr:nth-child(n+1){
+	background:#fff;
+}
+tr:nth-child(1){
+	background:#ddd;
+}
+tr:nth-child(2) td:nth-child(4){
+	background:lightpink;
+}
+tr:nth-child(3) td:nth-child(4){
+	background:lightblue;
+}
+tr:nth-child(4) td:nth-child(4){
+	background:yellow;
+}
+#footer{
+	background-color: var(--color);
+	position:sticky;
+	position:-webkit-sticky;
+	z-index:9999;
+	bottom:0;
+	width:100%;
+	height:60px;
+	text-align:center;
+}
+footer ul li{
+	padding-top:20px;
+}
+@media only screen and (min-width: 768px) {
+	.wrapper{
+		width:600px;
+		margin:0 auto;
+	}
+	.list{
+	width:95%;
+	height:15px;
+	padding:50px;
+	text-align:center;
+	padding-left:2px;
+	padding-bottom:5px;
+	line-height:25px;
+	}
+ul li{
+	list-style:none;
+	font-size:20px;
+	text-decoration:none;
+	display:inline-block;
+	padding:0 15px;/*the fist number stands for the vertical padding & the second for the horizontal padding*/
+}
+ul li ul{
+	width:60px;
+	padding-right:5px;
+}
+ul li ul li{
+	line-height:25px;
+	font-size:15px;
+}
+
+.profile{
+	width:100%;
+	height:auto;
+	padding-top:10px;
+	padding-left:5px;
+}
+.p-welcome{
+	font-size:20px;
+	text-align:center;
+	padding-top:20px;
+}
+.item{
+	font-size:20px;
+	padding-top:20px;
+}
+.item1{
+	padding-left:140px;
+	font-size:20px;
+}
+.France{
+	width:50%;
+	height:600px;
+	position:relative;top:10px;
+	float:left;
+}
+.France1{
+	width:50%;
+	height:600px;
+	position:relative;top:10px;	
+	float:right;
+}
+}
+.backtotop{
+	position:relative;top:10px;
+}
+
+@media only screen and (min-width: 1000px) {
+	.wrapper{
+		width:1000px;
+	}
+	.profile{
+	width:50%;
+	float:left;
+	height:300px;
+	padding-top:23px;
+	padding-left:5px;
+	}
+	.container{
+		width:48%;
+		height:430px;
+		display:flex;
+		flex-flow: column wrap;
+		position:relative;left:20px;top:26px;
+		/*A great way to position items in a website-->Eg.move it down a little etc.
+		/*align-content:center;*/ /*you can also use align-content*/
+	}
+	.item{
+	font-size:20px;
+	padding-top:20px;
+	line-height:35px;
+	padding-left:10px;
+	/*order:1; You can also change the order of the individual item in a container*/
+	}
+	.item1{
+		padding-left:80px;
+		font-size:20px;
+		padding-top:20px;
+		line-height:35px;
+		/*flex:0 1 100px;*/
+		/*flex: grow shrink width (width is the same as flex-basis)
+		/*order:2;*/
+		/*flex-grow:1; flex-grow or flex-shrink -->makes one specific item grow or shrink*/
+	}
+	ul li{
+		list-style:none;
+		font-size:20px;
+		font-family: 'Grandstander', cursive;
+		text-decoration:none;
+		display:inline-block;
+		padding:0 62px;/*the fist number stands for the vertical padding & the second for the horizontal padding*/
+	}
+	ul li ul{
+	width:55px;
+	padding-right:25px;
+	}
+	ul li ul li{
+		padding-left:25px;
+		line-height:27px;
+	}
+	.France{
+	width:50%;
+	height:1000px;
+	position:relative;top:40px;
+	}
+	.France1{
+	width:50%;
+	height:1000px;
+	position:relative;top:40px;
+	/*position:absolute; 
+	top:0px;
+	left:0px;*/
+	}
+	.backtotop{
+		position:relative;
+		top:40px;
+	}
+	table{
+	position:relative;left:205px;
+	}
+}
+
+
